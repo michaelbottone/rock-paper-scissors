@@ -5,7 +5,8 @@ userScore = +'';
 
 
 function game() {
-    for (let i = 0; i < 5; i++) {
+    while(userScore <3 && computerScore <3){
+    
 
         function computerPlay() {
             let n = Math.floor(Math.random() * 100);
@@ -57,7 +58,7 @@ function game() {
 
 alert(`you scored ${userScore}, the computer scored ${computerScore}`)
 if(computerScore >= 3) {
-    alert("the computer wins'")
+    alert("the computer wins")
 
 }else if (userScore >= 3){
     alert("congrats, you win!")
